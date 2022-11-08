@@ -18,11 +18,16 @@ $name = 'Angel';
 
 $mayusculas=strtoupper($name);
 $cantidad=strlen($name);
-$primera=
-$ultima=
-$sha1=
-$invertido=
-$aparece=
+$primera=$name[0];
+$primera=substr($name,0,1);
+$ultima=$name[$cantidad-1];
+$sha1=sha1($name);
+$invertido=strrev($name);
+if(str_contains($name, 'ana')){
+    $aparece='Si';
+}else{
+    $aparece='No';
+}
 echo 'El nombre en mayúsculas:'.$mayusculas;
 echo '<br/>';
 echo 'Num caracteres:'.$cantidad;
