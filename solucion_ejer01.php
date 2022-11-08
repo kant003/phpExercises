@@ -14,10 +14,10 @@
     https://www.php.net/manual/es/ref.strings.php
 */
 
+$name = 'Angel';
 
-
-$mayusculas=
-$cantidad=
+$mayusculas=strtoupper($name);
+$cantidad=strlen($name);
 $primera=
 $ultima=
 $sha1=
